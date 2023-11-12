@@ -1,14 +1,10 @@
 name: bow
 on:
    workflow_dispatch:
-
-   jobs:
    
-        build:
-              runs-on: ubuntu-latest
-              
-              steps:
-                    uses: actions/checkout@v3
-                    
-                   - name: run a command on bow console
-                      run: git clone https://github.com/discord/discord-example-app.git
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+             - name: run a command on bow console
+               run: git clone https://github.com/discord/discord-example-app.git
